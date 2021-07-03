@@ -3,9 +3,10 @@
 This project is a homework assignment for Rutgers Coding Bootcamp.
 
 ## Description
-This is a command-line application that accepts the user's input. The user is prompted for their team members and their information, which then generates an HTML that displays a formatted team roster based on the user's input. When the user clicks on an email address in the HTML, their default email program opens and populates the TO field of the email with the address.The user can also click on the GitHub username, which brings the user to the clicked GitHub profile within a new tab. 
+When the user opens the Note Taker in browser, they are presented with a landing page with a link to the notes page. The link will bring the user to the actual note page with existing notes listed in the left-hand column, in addition to fields in which a user can enter a note to the right-hand column. If a new note title and note text is entered, then a save icon will appear in the navigation bar. 
 
-To start the application, the user is prompted to enter the team manager's name, ID, email, and office number. The user is then presented with a menu with the option to add an engineer, or an intern, or to finish building their team. The user can either select engineer with prompts for their name, ID, email, and GitHub username, or they can select intern with prompts for their name, ID, email, and school. After answering all the prompts the user is taken back to the menu. Finally, when the user decides to finish building their team, they can exit the application, and the HTML is generated.
+When the user clicks the save icon, the new note entered is saved and appears in the left hand column with other existing notes
+
 
 ## Table of Contents 
 
@@ -18,26 +19,24 @@ To start the application, the user is prompted to enter the team manager's name,
 
 ## Deploy
 
-This webpage is generated via the command-line based on user inputs.
+This webpage will only run if the application's server is active [Link] http://localhost:3001/notes
 
 ## Technologies Used
 
 * HTML
 * JavaScript
-* Bootstrap
+* CSS
 * Node.js
-* Jest
+* Express.js
 
 ## Usage 
 
 ### Full Page
 ![ScreenShot](assets/images/Team-Memeber-Generator-Main.png "ScreenShot")
 
-### Demo
-[video demo link] https://drive.google.com/file/d/1Pj1pw2Kcy-15O5Nzi7_VgbCBnq9mKL-a/view
 
 ## Notes
-This projects used OOP and TDD to develop this web application. Each test passed successful to ensure a smooth user experience. Looking forward to using these methods for future development.
+This application uses Express.js and Node.js. The modularization of each file was difficult to grasp in addition to attempting to connect the front-end files to the back-end. 
 
 ## Contributions
 N/A
