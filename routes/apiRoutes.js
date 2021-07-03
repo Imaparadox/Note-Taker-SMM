@@ -15,7 +15,8 @@ router.post('/notes', (req, res) => {
 
 //DELETE route
 router.delete('/notes/:id', (req, res) => {
-    store.removeNote(req.body).then(note => { return res.json(note) })
+    // console.log(req.params.id);
+    store.removeNote(req.params.id).then(note => { return res.json(note) })
         .catch(error => { res.status(500).json(error) })
 })
 
@@ -23,7 +24,7 @@ router.delete('/notes/:id', (req, res) => {
 // app.delete('/notes/:id', (req, res) => {
 //     const sql = `DELETE FROM candidates WHERE id = ?`;
 //     const params = [req.params.id];
-  
+
 //     db.query(sql, params, (err, result) => {
 //       if (err) {
 //         res.statusMessage(400).json({ error: res.message });
